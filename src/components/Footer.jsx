@@ -34,21 +34,37 @@ export default function Footer() {
           borderBottom: '1px solid rgba(255, 255, 255, 0.1)'
         }}>
           {/* Brand */}
-          <div style={{ display: 'flex', alignItems: 'center', gap: '14px' }}>
-            <img
-              src="/images/rk-logo-transparent.png"
-              alt="RK Associates Pvt. Ltd."
-              style={{
-                height: '42px',
-                width: 'auto',
-                objectFit: 'contain'
-              }}
-            />
+          <div style={{ display: 'flex', alignItems: 'center', gap: '16px', flexWrap: 'wrap' }}>
+            <Link href="/" style={{ textDecoration: 'none', display: 'inline-flex', alignItems: 'center' }}>
+              <div style={{
+                backgroundColor: '#ffffff',
+                padding: '6px 12px',
+                borderRadius: '10px',
+                boxShadow: '0 4px 16px rgba(0, 0, 0, 0.25)',
+                display: 'inline-flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                border: '1px solid rgba(255, 255, 255, 0.15)',
+                transition: 'transform 0.2s ease'
+              }}>
+                <img
+                  src="/images/rk-footer-logo-clean.png"
+                  alt="RK Associates Pvt. Ltd."
+                  style={{
+                    height: '52px',
+                    width: 'auto',
+                    objectFit: 'contain',
+                    borderRadius: '4px',
+                    display: 'block'
+                  }}
+                />
+              </div>
+            </Link>
             <div>
-              <span style={{ fontSize: '1.15rem', fontWeight: 800, color: '#ffffff', display: 'block', lineHeight: 1.1 }}>
-                RK ASSOCIATES
+              <span style={{ fontSize: '1.2rem', fontWeight: 800, color: '#ffffff', display: 'block', lineHeight: 1.2 }}>
+                RK ASSOCIATES PVT. LTD.
               </span>
-              <span style={{ fontSize: '0.72rem', color: 'var(--blue-300)', letterSpacing: '0.04em' }}>
+              <span style={{ fontSize: '0.75rem', color: 'var(--blue-300)', letterSpacing: '0.04em' }}>
                 Corporate Partner for {SITE_CONFIG.insurerName} • IRDAI Reg. No. {SITE_CONFIG.insurerIrdaiRegNo}
               </span>
             </div>
