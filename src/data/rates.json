@@ -1,0 +1,21 @@
+{
+  "_schema_documentation": {
+    "description": "Empty rate card file for Mode B local calculator engine. Populated by agent/broker when Care rate tables are supplied.",
+    "formula": "Base rate indexed by plan -> sumInsured -> zone (1/2/3) -> ageBand",
+    "required_structure": {
+      "plan_slug": {
+        "zone_1": {
+          "sum_insured_value": {
+            "age_band_18_25": 0,
+            "age_band_26_35": 0,
+            "age_band_36_45": 0,
+            "age_band_46_55": 0,
+            "age_band_56_65": 0,
+            "age_band_66_plus": 0
+          }
+        }
+      }
+    }
+  },
+  "rates": {}
+}
