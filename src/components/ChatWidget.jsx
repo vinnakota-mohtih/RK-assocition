@@ -75,37 +75,35 @@ export default function ChatWidget() {
       {!isOpen && (
         <button
           onClick={() => setIsOpen(true)}
+          aria-label="Open Instant Help Support"
+          title="Instant Help"
           style={{
-            backgroundColor: 'var(--blue-600)',
+            width: '58px',
+            height: '58px',
+            background: 'linear-gradient(135deg, var(--blue-600, #2563eb) 0%, #0284c7 100%)',
             color: '#ffffff',
             border: 'none',
-            borderRadius: '9999px',
-            padding: '14px 22px',
+            borderRadius: '50%',
             boxShadow: '0 8px 25px rgba(37, 99, 235, 0.45)',
             display: 'flex',
             alignItems: 'center',
-            gap: '10px',
+            justifyContent: 'center',
             cursor: 'pointer',
-            fontSize: '0.95rem',
-            fontWeight: 700,
+            position: 'relative',
             transition: 'all 0.25s ease'
           }}
           className="animate-float"
         >
-          <div style={{ position: 'relative' }}>
-            <Bot size={22} />
-            <span style={{
+          <MessageSquare size={26} />
+          <span
+            className="pulse-dot"
+            style={{
               position: 'absolute',
-              top: '-2px',
-              right: '-2px',
-              width: '8px',
-              height: '8px',
-              backgroundColor: '#10b981',
-              borderRadius: '50%',
-              border: '2px solid #2563eb'
-            }} />
-          </div>
-          <span>Instant Help</span>
+              top: '3px',
+              right: '3px',
+              border: '2px solid #ffffff'
+            }}
+          />
         </button>
       )}
 
